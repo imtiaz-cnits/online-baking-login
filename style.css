@@ -24,6 +24,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navItems {
+  margin-left: 80px;
 }
 
 .navbar ul {
@@ -31,18 +36,99 @@
   padding-left: 0;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .navbar ul li {
-  padding-left: 20px;
+  padding: 25px 15px;
 }
 
 .navbar ul li a {
-  color: var(--black);
+  color: var(--primary-color);
   font-weight: 400;
   text-decoration: none;
 }
+
+.navbar ul li a:hover {
+  color: #888;
+}
+
+.en-nav-item {
+  padding-right: 0px !important;
+}
+
+.en-nav-item #border {
+  border-right: 1px solid #ccc;
+  padding-right: 15px;
+}
+
+.login-nav-item {
+  padding-left: 15px !important;
+}
+
 /* Navbar End */
+
+/* Hero Start */
+
+#hero {
+  background: url(./image/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-size: cover; */
+  width: 100%;
+  padding: 50px 0;
+}
+
+.login-form {
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 40px;
+}
+
+.login-form .input-label {
+  width: 100%;
+  font-family: var(--primary-font);
+  color: #888;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.login-form .password-label {
+  margin-top: 40px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  height: 40px;
+  width: 100%;
+  border: 1px solid var(--black);
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none;
+}
+
+.login-form input[type="text"]:hover,
+.login-form input[type="password"]:hover {
+  border-bottom: 3px solid var(--primary-color);
+  border-left: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+}
+
+#section-devider {
+  background-color: #1a5336;
+  height: 5px;
+  width: 100%;
+}
+
+/* Hero End */
+
+/* Card Payment Form CSS Start */
+.padding {
+  padding: 5rem !important;
+}
 
 /* Card Payment Form CSS Start */
 .form-control:focus {
