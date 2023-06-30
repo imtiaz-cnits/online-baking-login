@@ -20,8 +20,15 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar p-0">
+    <nav class="navbar p-lg-0">
         <div class="container">
+            <span class="navOpen">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+
+            <a href="#" class="mobile-logo me-auto">
+                <img src="./image/mobile-logo.png" alt="">
+            </a>
 
             <a href="#" class="logo">
                 <img src="./image/tdLogo.png" alt="">
@@ -60,7 +67,42 @@
                     </a>
                 </li>
             </ul>
+
+            <div class="login-mobile">
+                <a href="#">
+                    <i class="fa-solid fa-user-lock"></i> Log In
+                </a>
+            </div>
+
+            <div class="mobile-nav-shadow">
+                <div class="mobile-navbar">
+                    <div class="mobile-nav-logo">
+                        <img src="./image/mobile-logo.png" alt="">
+                        <i class="fa-solid fa-xmark navClose"></i>
+                    </div>
+                    <ul class="mobile-nav-items">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-globe"></i> Language: English</a>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-basket-shopping"></i> Products</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-file-lines"></i> Solutions</a>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Help Me</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-location-dot"></i> Find Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </nav>
     <!-- Navbar End -->
 
@@ -78,10 +120,31 @@
                                 your
                                 password via the "Forgot user name and/or password?" link.</p>
                         </div>
+                        <i class="fa-regular fa-shield" style="color: green;"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Alert box End -->
+
+    <!-- Script -->
+    <script>
+        let navOpenBtn = document.querySelector(".navOpen");
+        let navCloseBtn = document.querySelector(".navClose");
+        let mobileNavBox = document.querySelector(".mobile-navbar");
+        let navbarShadow = document.querySelector(".mobile-nav-shadow");
+
+        navOpenBtn.addEventListener("click", () => {
+            mobileNavBox.classList.add("open");
+            navbarShadow.style.display = "block";
+        });
+
+        navCloseBtn.addEventListener("click", () => {
+            mobileNavBox.classList.remove("open");
+            mobileNavBox.classList.add("close");
+            navbarShadow.style.display = "none";
+
+        })
+    </script>
 </body>
