@@ -79,10 +79,20 @@
   padding: 50px 0;
 }
 
+.form-header {
+  font-family: var(--primary-font);
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #1a5336;
+  /* padding-left: 20px; */
+  margin-bottom: 50px;
+}
+
 .login-form {
   border: 1px solid #ccc;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 40px;
+  /* margin: 0 20px; */
 }
 
 .login-form .input-label {
@@ -117,6 +127,88 @@
   border-top: 1px solid var(--black);
 }
 
+.checkbox {
+  margin-top: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+  accent-color: var(--primary-color);
+  background-color: var(--primary-color);
+  display: inline-block;
+  border: 4px solid var(--primary-color);
+  border-radius: none;
+  cursor: pointer;
+  transform: scale(1.4);
+  margin-right: 8px;
+  margin-left: 3px;
+}
+
+.checkbox input[type="checkbox"]:hover {
+  accent-color: var(--primary-color);
+}
+
+.checkbox label {
+  font-size: 1.1em;
+  color: #888;
+}
+
+.login-btn {
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 7px;
+  border: 2px solid #ccc;
+  color: #ccc;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.forgot-link {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.forgot-link a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.forgot-link a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.signup-call a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.signup-call a:hover {
+  text-decoration: underline;
+}
+
+.signup-call a i {
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+.signup-bottom-link span {
+  font-weight: 300;
+}
+
+.signup-bottom-link i {
+  color: var(--primary-color);
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
 #section-devider {
   background-color: #1a5336;
   height: 5px;
@@ -124,6 +216,68 @@
 }
 
 /* Hero End */
+
+/* Footer Start */
+
+.footer-header h3 {
+  font-size: 1.5em;
+  color: var(--black);
+  text-align: center;
+  font-weight: 300;
+  margin: 50px 0 40px;
+}
+
+.footer-header h3 a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.footer-header h3 a i {
+  font-size: 16px;
+}
+
+.footer-nav-items ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-nav-items ul li a {
+  text-decoration: none;
+  color: #616161;
+  font-size: 13px;
+}
+
+.footer-tables {
+  margin-top: 30px;
+}
+
+.footer-table {
+  border: 1px solid var(--primary-color);
+  font-size: 0.9em;
+  color: #616161;
+  font-weight: 300;
+  padding: 8px;
+  text-align: center;
+}
+
+.footer-text {
+  color: #616161;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.copyright-text {
+  color: #616161;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+/* Footer End */
 
 /* Card Payment Form CSS Start */
 .padding {
