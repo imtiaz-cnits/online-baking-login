@@ -18,7 +18,6 @@
   --black: #000000;
 }
 
-<<<<<<< HEAD
 /* Navbar Start */
 
 .navbar {
@@ -43,17 +42,11 @@
   font-weight: 400;
   text-decoration: none;
 }
-
 /* Navbar End */
-=======
-/* Card Payment Form CSS Start */
-.padding {
-  padding: 5rem !important;
-}
 
+/* Card Payment Form CSS Start */
 .form-control:focus {
   box-shadow: 10px 0px 0px 0px #ffffff !important;
-  border-color: #4ca746;
+  border-color: var(--primary-color);
 }
 /* Card Payment Form CSS End */
->>>>>>> main
