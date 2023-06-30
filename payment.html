@@ -25,21 +25,47 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <a href="#" class="logo">
-            <img src="./image/tdLogo.png" alt="">
-        </a>
-        <ul>
-            <li>
-                <a href="#">My TD</a>
-            </li>
-            <li>
-                <a href="#">Products</a>
-            </li>
-            <li>
-                <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
-            </li>
-        </ul>
+    <nav class="navbar p-0">
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./image/tdLogo.png" alt="">
+            </a>
+            <ul class="me-auto navItems">
+                <li>
+                    <a href="#">My TD</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </a>
+                </li>
+                <li class="en-nav-item">
+                    <a href="#" id="border">
+                        EN <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li class="login-nav-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user-lock"></i> Log In <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- Navbar -->
 
@@ -51,23 +77,16 @@
                 <div class="col-sm-8 col-md-6">
                     <div class="card">
                         <div class="card-header">
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <span style="font-weight: 700;">CREDIT/DEBIT CARD PAYMENT</span>
-
                                 </div>
-
                                 <div class="col-md-6 text-right" style="margin-top: -5px;">
-
                                     <img src="https://img.icons8.com/color/36/000000/visa.png">
                                     <img src="https://img.icons8.com/color/36/000000/mastercard.png">
                                     <img src="https://img.icons8.com/color/36/000000/amex.png">
-
                                 </div>
-
                             </div>
-
                         </div>
                         <div class="card-body" style="height: 350px">
                             <div class="form-group">
@@ -77,19 +96,14 @@
                                     placeholder="&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;"
                                     required>
                             </div>
-
                             <div class="row">
-
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="cc-exp" class="control-label">CARD EXPIRY</label>
                                         <input id="cc-exp" type="tel" class="input-lg form-control cc-exp"
                                             autocomplete="cc-exp" placeholder="&bull;&bull; / &bull;&bull;" required>
                                     </div>
-
-
                                 </div>
-
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="cc-cvc" class="control-label">CARD CVC</label>
@@ -97,19 +111,14 @@
                                             autocomplete="off" placeholder="&bull;&bull;&bull;&bull;" required>
                                     </div>
                                 </div>
-
                             </div>
-
-
                             <div class="form-group">
                                 <label for="numeric" class="control-label">CARD HOLDER NAME</label>
                                 <input type="text" class="input-lg form-control">
                             </div>
-
                             <div class="form-group">
-
                                 <input value="MAKE PAYMENT" type="button" class="btn btn-success btn-lg form-control"
-                                    style="font-size: 1.1rem;">
+                                    style="font-size: .8rem;">
                             </div>
                         </div>
                     </div>

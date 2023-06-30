@@ -290,3 +290,18 @@
   border-color: var(--primary-color);
 }
 /* Card Payment Form CSS End */
+
+/* Alert Box CSS */
+.alert {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.alert-icon i {
+  font-size: 3.5rem;
+  color: #af1000;
+  display: block;
+  text-align: center;
+}
+/* Alert Box CSS */
