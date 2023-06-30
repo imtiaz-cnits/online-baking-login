@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Graphik";
-  src: url(./font/GraphikBold.otf), url(./font/GraphikLight.otf),
-    url(./font/GraphikMedium.otf), url(./font/GraphikRegular.otf);
+  src: url(./font/GraphikRegular.otf);
 }
 
 * {
@@ -18,3 +17,30 @@
   --white: #fffff;
   --black: #000000;
 }
+
+/* Navbar Start */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  padding-left: 20px;
+}
+
+.navbar ul li a {
+  color: var(--black);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Navbar End */
