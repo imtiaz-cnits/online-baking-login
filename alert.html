@@ -2,20 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Banking - Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Banking - Alert</title>
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
 
 <body>
@@ -27,11 +26,11 @@
             </span>
 
             <a href="#" class="mobile-logo me-auto">
-                <img src="./image/mobile-logo.png" alt="">
+                <img src="./image/mobile-logo.png" alt="" />
             </a>
 
             <a href="#" class="logo">
-                <img src="./image/tdLogo.png" alt="">
+                <img src="./image/tdLogo.png" alt="" />
             </a>
             <ul class="me-auto navItems">
                 <li>
@@ -63,21 +62,20 @@
                 </li>
                 <li class="login-nav-item">
                     <a href="#">
-                        <i class="fa-solid fa-user-lock"></i> Log In <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-user-lock"></i> Log In
+                        <i class="fa-solid fa-chevron-down"></i>
                     </a>
                 </li>
             </ul>
 
             <div class="login-mobile">
-                <a href="#">
-                    <i class="fa-solid fa-user-lock"></i> Log In
-                </a>
+                <a href="#"> <i class="fa-solid fa-user-lock"></i> Log In </a>
             </div>
 
             <div class="mobile-nav-shadow">
                 <div class="mobile-navbar">
                     <div class="mobile-nav-logo">
-                        <img src="./image/mobile-logo.png" alt="">
+                        <img src="./image/mobile-logo.png" alt="" />
                         <i class="fa-solid fa-xmark navClose"></i>
                     </div>
                     <ul class="mobile-nav-items">
@@ -102,31 +100,176 @@
                 </div>
             </div>
         </div>
-
     </nav>
     <!-- Navbar End -->
 
-    <!-- Alert box Start -->
-    <section class="alert">
+    <!-- Hero Start -->
+    <section id="hero">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 d-flex align-items-center shadow border-1 p-5" style="border-radius: 10px;">
-                    <div class="alert-box">
-                        <div class="alert-icon mb-3">
-                            <i class="fa-solid fa-circle-exclamation"></i>
+            <div class="row justify-content-around">
+                <div class="col-lg-10">
+                    <h2 class="form-header">Welcome to Online Banking</h2>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-lg-4">
+                    <div class="login-form">
+                        <form>
+                            <div class="alert">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <p>Something doesn't match. Please try again. You can also retrieve your user name or
+                                    reset your password via the "Forgot user name and/or password?" link.</p>
+                            </div>
+                            <label for="" class="input-label">User name</label>
+                            <input type="text" id="text" onkeyup="trackChange(this.value)" />
+                            <p id="alertText"></p>
+                            <label for="" class="input-label password-label">Password</label>
+                            <input type="password" id="password" onkeyup="trackChange(this.value)" />
+                            <p id="alertPass"></p>
+
+                            <div class="checkbox">
+                                <input type="checkbox" name="remember" id="remember" />
+                                <label for="remember">Remember me</label>
+                            </div>
+
+                            <button class="login-btn" type="button">Log in</button>
+
+                            <div class="forgot-link">
+                                <a href="#">Forgot user name and/or password?
+                                    <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="signup-call">
+                        <p>
+                            <a href="#">Sign up for Online Banking
+                                <i class="fa-solid fa-chevron-right"></i></a>
+                        </p>
+                        <p>
+                            <a href="#">View the Online Banking demo
+                                <i class="fa-solid fa-chevron-right"></i></a>
+                        </p>
+                        <p>
+                            <a href="#">Learn more about TD mobile banking
+                                <i class="fa-solid fa-chevron-right"></i></a>
+                        </p>
+
+                        <div class="signup-devider"></div>
+
+                        <div class="signup-bottom-link">
+                            <div class="signup-bottom-link-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <span>
+                                <a href="#">Find out more about TD Bank's online security</a>
+                                and our commitment to provide you with a safe and secure
+                                online and mobile banking experience.
+                            </span>
                         </div>
-                        <div class="alert-text text-center">
-                            <p>Something doesn't match. Please try again. You can also retrieve your user name or reset
-                                your
-                                password via the "Forgot user name and/or password?" link.</p>
-                        </div>
-                        <i class="fa-regular fa-shield" style="color: green;"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Alert box End -->
+    <div id="section-devider"></div>
+    <!-- Hero End -->
+
+    <!-- Footer Start -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-header">
+                        <h3>
+                            Questions?
+                            <a href="#">Contact us <i class="fa-solid fa-chevron-right"></i></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="get-app-content">
+                        <div class="get-app-devider"></div>
+                        <div class="get-app">
+                            <h4><a href="#">Get the app</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <div class="footer-nav-items">
+                        <ul>
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">Security</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">California Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Bank Deposits FDIC Insured</a>
+                            </li>
+                            <li>
+                                <a href="#">Online Advertising</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="footer-tables">
+                        <div class="row">
+                            <div class="col-sm-12 p-0">
+                                <div class="footer-table">SECURITIES AND INVESTMENTS</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 p-0">
+                                <div class="footer-table">Not FDIC Insured</div>
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <div class="footer-table">No Bank Guarantee</div>
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <div class="footer-table">May Lose Value</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-text">
+                        Registered Investment Advisory, Securities and Brokerage services
+                        are offered through TD Private Client Wealth, LLC, member
+                        FINRA/SIPC. TD Private Client Wealth, LLC and TD Bank, N.A. are
+                        affiliated through their parent company the Toronto-Dominion Bank.
+                        TD Wealth is a trademark owned by the Toronto-Dominion Bank, used
+                        with permission. Heloo
+                    </div>
+
+                    <div class="copyright-text">
+                        © 2023 TD Bank, N.A. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer End -->
 
     <!-- Script -->
     <script>
@@ -144,7 +287,50 @@
             mobileNavBox.classList.remove("open");
             mobileNavBox.classList.add("close");
             navbarShadow.style.display = "none";
+        });
 
-        })
+        //   form validation
+
+        let textForm = document.querySelector("#text");
+        let passForm = document.querySelector("#password");
+        let alertText = document.querySelector("#alertText");
+        let alertPass = document.querySelector("#alertPass");
+
+        let focus = true;
+        textForm.addEventListener("blur", () => {
+            if (focus) {
+                textForm.style.borderBottom = "3px solid #ae1100";
+                alertText.innerHTML = "Oops, don't forget to enter your user name.";
+                alertText.style.color = "#ae1100";
+            }
+        });
+
+        function trackChange(value) {
+            if (value) {
+                focus = false;
+            } else {
+                focus = true;
+            }
+        }
+
+        textForm.addEventListener("keydown", () => {
+            textForm.style.borderBottom = "3px solid #008a00";
+            alertText.innerHTML = "";
+        });
+
+        passForm.addEventListener("blur", () => {
+            if (focus) {
+                passForm.style.borderBottom = "3px solid #ae1100";
+                alertPass.innerHTML = "Please enter a valid password.";
+                alertPass.style.color = "#ae1100";
+            }
+        });
+
+        passForm.addEventListener("keydown", () => {
+            passForm.style.borderBottom = "3px solid #008a00";
+            alertPass.innerHTML = "";
+        });
     </script>
 </body>
+
+</html>
