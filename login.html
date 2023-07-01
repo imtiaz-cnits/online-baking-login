@@ -257,6 +257,7 @@
 
     <!-- Script -->
     <script>
+<<<<<<< Updated upstream
         let navOpenBtn = document.querySelector(".navOpen");
         let navCloseBtn = document.querySelector(".navClose");
         let mobileNavBox = document.querySelector(".mobile-navbar");
@@ -295,8 +296,61 @@
             } else {
                 focus = true;
             }
+=======
+      let navOpenBtn = document.querySelector(".navOpen");
+      let navCloseBtn = document.querySelector(".navClose");
+      let mobileNavBox = document.querySelector(".mobile-navbar");
+      let navbarShadow = document.querySelector(".mobile-nav-shadow");
+
+      navOpenBtn.addEventListener("click", () => {
+        mobileNavBox.classList.add("open");
+        navbarShadow.style.display = "block";
+      });
+
+      navCloseBtn.addEventListener("click", () => {
+        mobileNavBox.classList.remove("open");
+        mobileNavBox.classList.add("close");
+        navbarShadow.style.display = "none";
+      });
+
+      //   form validation
+
+      let textForm = document.querySelector("#text");
+      let passForm = document.querySelector("#password");
+      let alertText = document.querySelector("#alertText");
+      let alertPass = document.querySelector("#alertPass");
+
+      let focus = true;
+      textForm.addEventListener("blur", () => {
+        if (focus) {
+          textForm.style.borderBottom = "3px solid #ae1100";
+          alertText.innerHTML = "Oops, don't forget to enter your user name.";
+          alertText.style.color = "#ae1100";
+        }
+      });
+
+      function trackChange(value) {
+        if (value) {
+          focus = false;
+        } else {
+          focus = true;
+        }
+      }
+
+      textForm.addEventListener("keydown", () => {
+        textForm.style.borderBottom = "3px solid #008a00";
+        alertText.innerHTML = "";
+      });
+
+      passForm.addEventListener("blur", () => {
+        if (focus) {
+          passForm.style.borderBottom = "3px solid #ae1100";
+          alertPass.innerHTML = "Please enter a valid password.";
+          alertPass.style.color = "#ae1100";
+>>>>>>> Stashed changes
         }
 
+<<<<<<< Updated upstream
         textForm.addEventListener("keydown", () => {
             textForm.style.borderBottom = "3px solid green";
             alertText.innerHTML = "";
@@ -314,6 +368,12 @@
             passForm.style.borderBottom = "3px solid green";
             alertPass.innerHTML = "";
         });
+=======
+      passForm.addEventListener("keydown", () => {
+        passForm.style.borderBottom = "3px solid #008a00";
+        alertPass.innerHTML = "";
+      });
+>>>>>>> Stashed changes
     </script>
 </body>
 
