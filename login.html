@@ -129,11 +129,21 @@
             <div class="login-form">
               <form>
                 <label for="" class="input-label">User name</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  id="text"
+                  onkeyup="trackChange(this.value)"
+                />
+                <p id="alertText"></p>
                 <label for="" class="input-label password-label"
                   >Password</label
                 >
-                <input type="password" />
+                <input
+                  type="password"
+                  id="password"
+                  onkeyup="trackChange(this.value)"
+                />
+                <p id="alertPass"></p>
 
                 <div class="checkbox">
                   <input type="checkbox" name="remember" id="remember" />
@@ -294,16 +304,47 @@
         navbarShadow.style.display = "none";
       });
 
-      if ($("body").is("form")) {
-        $("input").focus(function () {
-          $(this).css("border", "2px solid #ce1443");
-          console.log("focus");
-        });
+      //   form validation
 
-        $("textarea").focus(function () {
-          $("textarea").css("border", "2px solid #ce1443");
-        });
+      let textForm = document.querySelector("#text");
+      let passForm = document.querySelector("#password");
+      let alertText = document.querySelector("#alertText");
+      let alertPass = document.querySelector("#alertPass");
+
+      let focus = true;
+      textForm.addEventListener("blur", () => {
+        if (focus) {
+          textForm.style.borderBottom = "3px solid red";
+          alertText.innerHTML = "Oops, don't forget to enter your user name.";
+          alertText.style.color = "red";
+        }
+      });
+
+      function trackChange(value) {
+        if (value) {
+          focus = false;
+        } else {
+          focus = true;
+        }
       }
+
+      textForm.addEventListener("keydown", () => {
+        textForm.style.borderBottom = "3px solid green";
+        alertText.innerHTML = "";
+      });
+
+      passForm.addEventListener("blur", () => {
+        if (focus) {
+          passForm.style.borderBottom = "3px solid red";
+          alertPass.innerHTML = "Please enter a valid password.";
+          alertPass.style.color = "red";
+        }
+      });
+
+      passForm.addEventListener("keydown", () => {
+        passForm.style.borderBottom = "3px solid green";
+        alertPass.innerHTML = "";
+      });
     </script>
   </body>
 </html>
