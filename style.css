@@ -217,6 +217,8 @@
   color: #888;
   font-weight: 400;
   font-size: 1.2em;
+  padding-bottom: 8px;
+  font-weight: 300;
 }
 
 .login-form .password-label {
@@ -227,7 +229,7 @@
 .login-form input[type="password"] {
   height: 40px;
   width: 100%;
-  border: 1px solid var(--black);
+  border: 1px solid #ccc;
   padding: 10px;
 }
 
@@ -240,9 +242,16 @@
 .login-form input[type="text"]:hover,
 .login-form input[type="password"]:hover {
   border-bottom: 3px solid var(--primary-color);
-  border-left: 1px solid var(--black);
-  border-right: 1px solid var(--black);
-  border-top: 1px solid var(--black);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+#alertText,
+#alertPass {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .checkbox {
@@ -257,10 +266,8 @@
   margin-right: 8px;
   margin-left: 3px;
   position: relative;
-  width: 20px;
-  height: 20px;
-  outline: none;
-  /* -webkit-appearance: none; */
+  width: 18px;
+  height: 18px;
   outline: none;
 }
 
@@ -279,10 +286,11 @@
 .checkbox label {
   font-size: 1.2em;
   color: #888;
+  font-weight: 300;
 }
 
 .login-btn {
-  width: 80%;
+  width: 225px;
   margin: auto;
   display: block;
   padding: 7px;
@@ -311,6 +319,10 @@
   font-weight: 700;
 }
 
+.signup-call p {
+  margin-bottom: 20px;
+}
+
 .signup-call a {
   text-decoration: none;
   color: var(--primary-color);
@@ -330,6 +342,14 @@
 
 .signup-bottom-link span {
   font-weight: 300;
+}
+
+.signup-bottom-link {
+  display: flex;
+}
+
+.signup-bottom-link-icon {
+  margin-right: 6px;
 }
 
 .signup-bottom-link i {
@@ -356,8 +376,22 @@
     background: none;
   }
 
+  .login-form {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+  }
+
+  .forgot-link {
+    margin-bottom: 0px;
+  }
+
+  .forgot-link a {
+    text-align: left;
+  }
+
   .signup-call {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .checkbox input[type="checkbox"] {
@@ -378,7 +412,7 @@
   color: var(--black);
   text-align: center;
   font-weight: 300;
-  margin: 50px 0 40px;
+  margin: 50px 0 20px;
 }
 
 .footer-header h3 a {
@@ -391,12 +425,36 @@
   font-size: 16px;
 }
 
+.get-app-content {
+  display: none;
+}
+
+.get-app-devider {
+  width: 350px;
+  height: 1px;
+  background-color: rgba(0, 138, 0, 0.5);
+  margin: auto;
+}
+
+.get-app h4 {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.get-app h4 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 .footer-nav-items ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
   list-style: none;
+  margin-top: 20px;
 }
 
 .footer-nav-items ul li a {
@@ -429,6 +487,24 @@
   color: #616161;
   font-size: 14px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .get-app-content {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer-tables {
+    margin: 30px 15px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .get-app-devider {
+    width: 100%;
+  }
 }
 
 /* Footer End */
