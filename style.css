@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Graphik";
-  src: url(./font/GraphikRegular.otf);
+  src: url(./font/GraphikRegular.otf), url(./font/GraphikLight.otf),
+    url(./font/GraphikBold.otf);
 }
 
 @font-face {
@@ -235,10 +236,18 @@
 
 .login-form .input-label {
   width: 100%;
+<<<<<<< Updated upstream
   font-family: var(--secondary-font);
   color: #1c1c1c;
   font-size: 18px;
   padding: 5px 0 10px 0;
+=======
+  font-family: var(--primary-font);
+  color: #888;
+  font-weight: 200;
+  font-size: 1.2em;
+  padding-bottom: 8px;
+>>>>>>> Stashed changes
 }
 
 .login-form .password-label {
@@ -266,6 +275,14 @@
   border-top: 1px solid var(--black);
 }
 
+#alertText,
+#alertPass {
+  font-size: 13px;
+  margin-top: 10px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+
 .checkbox {
   margin-top: 15px;
 }
@@ -278,8 +295,8 @@
   margin-right: 8px;
   margin-left: 3px;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   outline: none;
   /* -webkit-appearance: none; */
   outline: none;
@@ -304,10 +321,9 @@
 }
 
 .login-btn {
-  width: 80%;
   margin: auto;
   display: block;
-  padding: 7px;
+  padding: 7px 80px;
   border: 2px solid #ccc;
   color: #ccc;
   font-weight: 700;
@@ -383,6 +399,12 @@
 @media screen and (max-width: 990px) {
   #hero {
     background: none;
+  }
+
+  .login-form {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0;
   }
 
   .signup-call {
